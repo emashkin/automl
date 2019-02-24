@@ -40,10 +40,12 @@ Optimization metric for binary classification task - ROC_AUC.
 
 ## Examples
 ### Set Training Time Limit
-To set time limit for training process just set time limit to environmet variable TIME_LIMIT in second.\
-E.g. to set training time limit to 300 sec:\
-```export TIME_LIMIT=300```
-
+To set time limit for training process just set time limit to environmet variable **TIME_LIMIT** in second.\
+E.g. to set training time limit to 300 sec:
+```
+export TIME_LIMIT=300
+```
+If TIME_LIMIT variable is not defined default value of **300 sec** will be used.
 
 ### Train model
 To train regression model:\
