@@ -47,28 +47,53 @@ E.g. to set training time limit to 300 sec:\
 
 ### Train model
 To train regression model:\
-`python3 train.py --mode regression --train-csv <path_to_train_data_file> --model-dir <model_directory_path>`
+```
+python3 train.py \
+    --mode regression \
+    --train-csv <path_to_train_data_file> \
+    --model-dir <model_directory_path>
+```
 
 To train classification task:\
-`python3 train.py --mode classification --train-csv <path_to_train_data_file> --model-dir <model_directory_path>`
+```
+python3 train.py \
+    --mode classification \
+    --train-csv <path_to_train_data_file> \
+    --model-dir <model_directory_path>
+```
 
 `<path_to_train_data_file>` - path to a csv file you'd like to train your model on\
 `<model_directory_path>` - path to a directory you want to save your model after it is trained
 
-Example:\
-`python3 train.py --mode classification --train-csv train.csv --model-dir .`
+Example:
+```
+python3 train.py \
+    --mode classification \
+    --train-csv train.csv \
+    --model-dir .
+```
 
 
 ### Use model for prediction
 To make a prediction for regression task:\
-`python3 predict.py --test-csv <path_to_test_data_file> --prediction-csv <path_to_prediction_file> --model-dir <model_directory_path>`
+```
+python3 predict.py \
+    --test-csv <path_to_test_data_file> \
+    --prediction-csv <path_to_prediction_file> \
+    --model-dir <model_directory_path>
+```
 
 `<path_to_test_data_file>` - path to a csv file you'd like to make prediction for. Should have the same structure as train file does but without target vector\
 `<path_to_prediction_file>` - path to a csv file you want to save the prediction to\
 `<model_directory_path>` - path to a directory where your trained model is located
 
 Example:\
-`python3 predict.py --test-csv test.csv --prediction-csv prediction.csv --model-dir .`
+```
+python3 predict.py \
+    --test-csv test.csv \
+    --prediction-csv prediction.csv \
+    --model-dir .
+```
 
 
 ## Try on SDSJ 2018 Data
